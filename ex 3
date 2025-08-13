@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    double nota;
+    
+    printf("Digite uma nota: ");
+    scanf("%lf", &nota);
+    
+    if (nota > 9) {
+        printf("Excelente!\n");
+    } else if (nota >= 7) {
+        printf("Bom.\n");
+    } else if (nota >= 5) {
+        printf("Regular.\n");
+    } else {
+        printf("Insuficiente.\n");
+    }
+    return 0;
+}

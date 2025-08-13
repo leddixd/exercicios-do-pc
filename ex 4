@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int A;
+    int B;
+    int C;
+    
+    printf("Verificador de triangulos\n");
+    
+    printf("Digite o primeiro lado do triangulo\n");
+    scanf("%d", &A);
+    printf("Digite o segundo lado do triangulo\n");
+    scanf("%d", &B);
+    printf("Digite o terceiro lado do triangulo\n");
+    scanf("%d", &C);
+    
+    if (((A + B) > C) && ((A + C) > B) && ((B + C) > A)) {
+        printf("Triangulo Valido");
+    }
+    else {
+        printf("Triangulo Invalido");
+    }
+    return 0;
+}

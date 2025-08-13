@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int* idade;
+    double* peso;
+    
+    printf("VERIFICAÇÃO DE APTIDÃO PARA DOAÇÃO DE SANGUE\n\t");
+    
+    printf("Qual a idade da pessoa?: \n");
+    scanf("%i", idade);
+    printf("Qual o peso da pessoa?: \n");
+    scanf("%lf", peso);
+    
+    if (*idade < 16 || *idade > 69 || *peso < 50) {
+        printf("Não Apto para doar sangue");
+    }
+    else{
+        printf("Apto para doar sangue");
+    }
+}
